@@ -1,0 +1,47 @@
+@import '../../assets/colors.scss';
+@import '../../assets/sizes.scss';
+@import '../../assets/fonts.scss';
+
+.widget {
+	width: $widget--width;
+	min-height: $widget--height-min;
+	background-color: #27293c;
+	box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.5);
+	border: 1px solid #333548;
+	border-radius: 2px;
+
+	display: grid;
+	grid-template-rows: $topbar--height-normal auto $bottombar--height-normal;
+	grid-template-columns: 100%;
+
+	.mid-section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+
+			@media screen and (max-width: $widget--width) {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		@media screen and (max-width: $widget--width) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	@media screen and (max-width: $widget--width) {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

@@ -1,0 +1,24 @@
+@import './assets/colors.scss';
+@import './assets/sizes.scss';
+@import './assets/fonts.scss';
+
+.app {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #27293c;
+    background-image: url('./assets/images/main_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: $widget--width) {
+        width: 100%;
+        height: 100%;
+    }
+}

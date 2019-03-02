@@ -1,0 +1,20 @@
+@import '../../assets/colors.scss';
+@import '../../assets/sizes.scss';
+@import '../../assets/fonts.scss';
+
+.game-info {
+	// width: 279px;
+
+	.panes {
+		display: grid;
+		grid-column-gap: 5px;
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-template-columns: auto auto auto;
+	}
+
+	.button {
+		width: 100%;
+		display: flex;
+	}
+}

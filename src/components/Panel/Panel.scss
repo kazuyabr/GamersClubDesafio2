@@ -1,0 +1,32 @@
+@import '../../assets/colors.scss';
+@import '../../assets/sizes.scss';
+@import '../../assets/fonts.scss';
+
+.panel {
+	min-width: 93px;
+	height: 103px;
+	border-radius: 2px;
+	font-family: $font-Teko;
+	background: linear-gradient(180deg, $panel--backgroundColor-top  0%, $panel--backgroundColor-bottom 100%);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+
+	> p {
+		width: 80%;
+		margin: 0;
+		padding: 0;
+		color: #fff;
+		font-size: 17px;
+		text-transform: uppercase;
+	}
+
+	p:first-child {
+		font-size: 37px;
+		font-weight: 400;
+		line-height: 32px;
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,48 @@
+@import '../../assets/colors.scss';
+@import '../../assets/sizes.scss';
+@import '../../assets/fonts.scss';
+
+.big-button {
+	width: $bigButton--width-normal;
+	min-width: $bigButton--width-min;
+	min-height: $bigButton--height-normal;
+	color: $bigButton--color-normal;
+	font-size: $bigButton--fontsize-normal;
+	font-weight: bold;
+	border-radius: 2px;
+	border: 1px solid #000;
+	box-shadow: 0px 6px 6px -3px $bigButton--shadowColor-normal;
+	outline: none;
+	cursor: pointer;
+
+	> p {
+		margin: 0;
+		display: inline;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-family: $font-Teko;
+		font-weight: 400;
+
+		i {
+			font-size: 13px;
+		}
+
+		.brake-line {
+			margin: 0 5px;
+			color: rgba(255, 255, 255, 0.24);
+		}
+	}
+
+	.line-value {
+		height: 60%;
+		// margin-right: 10px;
+		padding-right: 10px;
+		font-size: 24px;
+	}
+
+	&:active {
+		outline: none;
+		position: relative;
+		top: 2px;
+	}
+}

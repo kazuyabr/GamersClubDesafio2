@@ -1,0 +1,22 @@
+@import '../../assets/colors.scss';
+@import '../../assets/sizes.scss';
+@import '../../assets/fonts.scss';
+
+.go-button {
+	width: 28px;
+	height: 28px;
+	color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+	background-color: #95b200;
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+	outline: none;
+	border: none;
+	margin: 0 5px;
+	cursor: pointer;
+
+	&:active {
+		position: relative;
+		top: 2px;
+	}
+}
